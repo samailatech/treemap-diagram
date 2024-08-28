@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treemap Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #title {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        #description {
+            text-align: center;
+            margin: 0 20px;
+        }
+        #chart {
+            width: 100%;
+            height: 600px;
+            margin: auto;
+        }
+        .tile {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+        .legend {
+            font-size: 12px;
+        }
+        .legend-item {
+            stroke: #000;
+            stroke-width: 1px;
+        }
+        #tooltip {
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            pointer-events: none;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">Kickstarter Pledges Treemap</div>
+    <div id="description">This treemap visualizes Kickstarter pledges categorized by project type.</div>
+    <div id="chart"></div>
+    <div id="tooltip"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
